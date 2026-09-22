@@ -46,9 +46,9 @@ namespace MidtermExam.Prob02
             {
                 for (int b = 0; b < count - a - 1; b++)
                 {
-                    if (list.First() < current.Next.Value)
+                    if (current.Value < current.Next.Value)
                     {
-                        int temp = list.First();
+                        int temp = current.Value;
                         current.Value = current.Next.Value;
                         current.Next.Value = temp;
                     }
